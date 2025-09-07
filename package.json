@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "dotenv -c -- next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "start": "dotenv -c -- next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "dotenv-cli": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "next": "15.5.2",
     "prettier": "^3.6.2",
