@@ -6,7 +6,7 @@ export default async function Home() {
     <>
       <Toaster
         toastOptions={{
-          position: "bottom-center",
+          position: "top-center",
           style: {
             fontWeight: "600",
             padding: "15px 25px",
