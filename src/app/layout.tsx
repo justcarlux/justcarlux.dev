@@ -13,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`bg-gradient-to-b from-slate-600 to-slate-900 ${raleway.className} text-white antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${raleway.className} text-white antialiased`}>{children}</body>
     </html>
   );
 }

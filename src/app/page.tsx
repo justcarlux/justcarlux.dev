@@ -1,9 +1,11 @@
+import BackgroundLayer from "@/components/BackgroundLayer";
 import ProfileSection from "@/components/profile/ProfileSection";
 import { Toaster } from "react-hot-toast";
 
 export default async function Home() {
   return (
     <>
+      <BackgroundLayer />
       <Toaster
         toastOptions={{
           position: "top-center",
