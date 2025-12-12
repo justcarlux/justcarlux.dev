@@ -1,4 +1,4 @@
-FROM oven/bun AS base
+FROM oven/bun:1.3.3 AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -31,8 +31,7 @@ ENV NODE_ENV=production
 # Disable telemetry
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 --ingroup nodejs nextjs
+RUN adduser --system --uid 1001 nextjs
 
 # COPY --from=builder /app/public ./public
 
