@@ -31,7 +31,8 @@ ENV NODE_ENV=production
 # Disable telemetry
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 --ingroup nodejs nextjs
 
 # COPY --from=builder /app/public ./public
 
